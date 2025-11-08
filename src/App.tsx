@@ -369,7 +369,7 @@ export const App: React.FC = () => {
           />
         </div>
       ) : null}
-      <div className="version-display">v0.1.0</div>
+      <div className="version-display">v0.1.1</div>
     </div>
   );
 };

@@ -12,6 +12,9 @@ start:
 build:
 	npm run build
 
+deploy: build
+	npm run deploy
+
 preview:
 	npm run preview
 
