@@ -1,6 +1,6 @@
 {
   "name": "room-planner-2d",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
   "homepage": "https://avenix.github.io/2d-room-planner",
   "dependencies": {
