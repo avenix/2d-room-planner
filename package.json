@@ -1,6 +1,6 @@
 {
   "name": "room-planner-2d",
-  "version": "0.1.5",
+  "version": "0.1.9",
   "private": false,
   "homepage": "https://avenix.github.io/2d-room-planner",
   "dependencies": {
@@ -21,6 +21,6 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/avenix/2d-room-planner.git"
   }
 }

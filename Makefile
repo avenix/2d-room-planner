@@ -1,4 +1,4 @@
-.PHONY: dev start build install deploy
+.PHONY: dev start build install deploy preview
 
 install:
 	npm install
@@ -12,9 +12,6 @@ start:
 build:
 	npm run build
 
-deploy: build
-	npm run deploy
-
 preview:
 	npm run preview
 
@@ -25,4 +22,6 @@ deploy:
 	sed -i.bak "s/v[0-9]*\.[0-9]*\.[0-9]*/v$$VERSION/" src/App.tsx && rm src/App.tsx.bak
 	@echo "Building project..."
 	@$(MAKE) build
+	@echo "Deploying to GitHub Pages..."
+	@npm run deploy
 	@echo "Deploy complete! New version: v$$(node -p "require('./package.json').version")"
